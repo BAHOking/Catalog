@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <title>Catalog</title>
+    <link rel="stylesheet" href="fonts/stolzl/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <section class="row">
+        <div class="header__box-top--text col-12">
+          <a class="dropdown-item" href="#">
+            <p class="header__top-text">Брендовий верхній одяг від 899 грн</p>
+          </a>
+        </div>
+      </section>
+      <section class="header__box-middle container d-flex">
+        <article class="header__box-logo">
+          <a class="dropdown-item" href="#">
+            <img class="header__logo" src="images/logo.svg" alt="monvalise" />
+          </a>
+        </article>
+
+        <article class="header__box-bar d-flex">
+          <div class="header__box-form">
+            <form class="d-flex g-3">
+              <div class="header__form-box--input">
+                <input
+                  class="header__form-input form-control"
+                  type="text"
+                  placeholder="Знайти речі або бренди"
+                />
+              </div>
+
+              <div>
+                <button class="header__form-btn btn mb-3" type="submit">
+                  Додати товар
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="header__box-items col-auto d-flex">
+            <div class="header__box-select">
+              <select
+                class="header__select form-select form-select-lg mb-3 border-0"
+                aria-label=".form-select-lg example"
+              >
+                <option selected>Укр</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="header__box-icons">
+              <button class="btn position-relative" type="button">
+                <img
+                  class="header__btns-icon--1"
+                  src="images/icon/vector2.png"
+                  alt="vector2"
+                />
+                <span
+                  class="header__btns-span--1 position-absolute top-0 translate-middle text-bg-light border-light rounded-circle"
+                  >8</span
+                >
+              </button>
+
+              <button class="btn position-relative" type="button">
+                <img
+                  class="header__btns-icon--2"
+                  src="images/icon/vector3.png"
+                  alt="vector3"
+                />
+                <span
+                  class="header__btns-span--1 position-absolute top-0 translate-middle bg-danger border-light rounded-circle"
+                  >3</span
+                >
+              </button>
+
+              <button class="btn position-relative" type="button">
+                <img
+                  class="header__btns-icon--3"
+                  src="images/icon/vector4.png"
+                  alt="vector4"
+                />
+                <span
+                  class="header__btns-span--1 position-absolute top-0 translate-middle text-bg-light border-light rounded-circle"
+                  >3</span
+                >
+              </button>
+            </div>
+
+            <div class="header__box-avatar col-auto d-flex">
+              <a class="dropdown-item" href="#">
+                <img
+                  class="header__avatar"
+                  src="images/avatar.png"
+                  alt="avatar"
+                />
+              </a>
+              <select
+                class="header__avatar-select form-select form-select-lg mb-3 border-0"
+                aria-label=".form-select-lg example"
+              >
+                <option value="1">11111111111111</option>
+                <option value="2">22222222222222</option>
+                <option value="3">333333333333333</option>
+              </select>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="header__box-navs row container">
+        <nav class="nav">
+          <a class="nav-link" href="#">Головна</a>
+          <a class="nav-link" href="#">Каталог</a>
+          <a class="nav-link" href="#">Жінкам</a>
+          <a class="nav-link" href="#">Чоловікам</a>
+          <a class="nav-link" href="#">Дитячі речі</a>
+          <a class="nav-link" href="#">Аукціон</a>
+          <a class="nav-link" href="#">Бренди</a>
+          <a class="nav-link" href="#">Акції</a>
+          <a class="nav-link" href="#">Аутентифікація</a>
+          <a class="nav-link" href="#">Блог</a>
+        </nav>
+      </section>
+    </header>
+
+    <main class="main container">
+      <section class="main__breadcrumb row">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Головна</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Каталог одягу
+            </li>
+          </ol>
+        </nav>
+      </section>
+
+      <h1 class="main__title row h1">Каталог одягу</h1>
+
+      <section class="main__filters d-flex">
+        <h2 class="main__filters-title h2">Фільтри</h2>
+        <div class="main__box-filters d-flex col-auto">
+          <span class="main__filters-span col-auto">Сортувати за:</span>
+          <div class="input-group mb-3">
+            <button
+              type="button"
+              class="main__filters-select-left btn btn-outline-secondary"
+            >
+              За замовчуванням
+            </button>
+            <button
+              type="button"
+              class="main__filters-select-right btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">One</a></li>
+              <li><a class="dropdown-item" href="#">Two</a></li>
+              <li><a class="dropdown-item" href="#">Three</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalogue__box d-flex">
+        <aside class="aside__box">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button
+                  class="accordion__btn accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Категорії
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingOne"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault1"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault1"
+                    >
+                      1 <span>(64)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault2"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault2"
+                    >
+                      2 <span>(16)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault3"
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault3"
+                    >
+                      3 <span>(24)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button
+                  class="accordion__btn accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Ціна
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingTwo"
+              >
+                <div class="accordion-body">
+                  <div class="d-flex slidecontainer">
+                    <input
+                      class="slider slider__left"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                    />
+                    <input
+                      class="slider"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="0"
+                    />
+                  </div>
+                  <div
+                    class="accordion__box-form d-flex justify-content-between"
+                  >
+                    <div class="mb-3">
+                      <label
+                        for="formGroupExampleInput"
+                        class="accordion__form-labe form-label"
+                        >Від</label
+                      >
+                      <input
+                        class="accordion__box-input form-control"
+                        type="text"
+                        id="formGroupExampleInput"
+                        placeholder="Example input placeholder"
+                        value="980"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label
+                        for="formGroupExampleInput2"
+                        class="accordion__form-labe form-label"
+                        >До</label
+                      >
+                      <input
+                        class="accordion__box-input form-control"
+                        type="text"
+                        id="formGroupExampleInput2"
+                        placeholder="Another input placeholder"
+                        value="20465"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion__btn accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Продавець
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault4"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault4"
+                    >
+                      1 <span>(64)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault5"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault5"
+                    >
+                      2 <span>(16)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault6"
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault6"
+                    >
+                      3 <span>(24)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button
+                  class="accordion__btn accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  Бренд
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingFour"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault7"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault7"
+                    >
+                      1 <span>(64)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault8"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault8"
+                    >
+                      2 <span>(16)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault9"
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault9"
+                    >
+                      3 <span>(24)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                <button
+                  class="accordion__btn accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFive"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseFive"
+                >
+                  Стать
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFive"
+                class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingFive"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault10"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault10"
+                    >
+                      Жінкам <span>(64)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault11"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault11"
+                    >
+                      Чоловікам <span>(16)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault12"
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault12"
+                    >
+                      Унісекс <span>(24)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                <button
+                  class="accordion__btn accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSix"
+                >
+                  Розмір
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSix"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingSix"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault13"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault13"
+                    >
+                      1 <span>(64)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault14"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault14"
+                    >
+                      2 <span>(16)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault15"
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault15"
+                    >
+                      3 <span>(24)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                <button
+                  class="accordion__btn accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSeven"
+                >
+                  Колір
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSeven"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingSeven"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault16"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault16"
+                    >
+                      1 <span>(64)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault17"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault17"
+                    >
+                      2 <span>(16)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault18"
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault18"
+                    >
+                      3 <span>(24)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-heading-8">
+                <button
+                  class="accordion__btn accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-8"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-8"
+                >
+                  Матеріал
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-8"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-heading-8"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault19"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault19"
+                    >
+                      1 <span>(64)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault20"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault20"
+                    >
+                      2 <span>(16)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault21"
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault21"
+                    >
+                      3 <span>(24)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-heading-9">
+                <button
+                  class="accordion__btn accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-9"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-9"
+                >
+                  Сезон
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-9"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-heading-9"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault22"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault22"
+                    >
+                      1 <span>(64)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault23"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault23"
+                    >
+                      2 <span>(16)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault24"
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault24"
+                    >
+                      3 <span>(24)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-heading-10">
+                <button
+                  class="accordion__btn accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-10"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse-10"
+                >
+                  Стиль
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse-10"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-heading-10"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault25"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault25"
+                    >
+                      1 <span>(64)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault26"
+                      checked
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault26"
+                    >
+                      2 <span>(16)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault27"
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between"
+                      for="flexCheckDefault27"
+                    >
+                      3 <span>(24)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <div class="div__box">
+          <article class="cards__box">
+            <div class="card" id="card1">
+              <a href="#" class="card-link">
+                <div class="card__img-box">
+                  <img
+                    class="card-img-top"
+                    src="images/cards/1.png"
+                    alt="1.png"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">LOUIS VUITTON</h6>
+                <h5 class="card-title">Темно-сині джинси Louis Vuitton</h5>
+
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-top">5 499 ₴</p>
+                  <a href="#" class="card-link-top card-link">Херсон</a>
+                </div>
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-bottom">3 799 ₴</p>
+                  <a href="#" class="card-link-bottom card-link">LoveBrand</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="card2">
+              <a href="#" class="card-link">
+                <div class="card__img-box">
+                  <img
+                    class="card-img-top"
+                    src="images/cards/2.png"
+                    alt="1.png"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">THOM BROWNE</h6>
+                <h5 class="card-title">Чорний піджак Thom Browne</h5>
+
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-top">11 999 ₴</p>
+                  <a href="#" class="card-link-top card-link">Хмельницький</a>
+                </div>
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-bottom">8 599 ₴</p>
+                  <a href="#" class="card-link-bottom card-link"
+                    >Sell_For_Men</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="card3">
+              <a href="#" class="card-link">
+                <div class="card__img-box">
+                  <img
+                    class="card-img-top"
+                    src="images/cards/3.png"
+                    alt="1.png"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">CANALI</h6>
+                <h5 class="card-title">Вовняний піджак Canali</h5>
+
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-top">4 999 ₴</p>
+                  <a href="#" class="card-link-top card-link">Хмельницький</a>
+                </div>
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-bottom">2 599 ₴</p>
+                  <a href="#" class="card-link-bottom card-link"
+                    >Sell_For_Men</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="card4">
+              <a href="#" class="card-link">
+                <div class="card__img-box">
+                  <img
+                    class="card-img-top"
+                    src="images/cards/4.png"
+                    alt="1.png"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">LOUIS VUITTON</h6>
+                <h5 class="card-title">Клатч Louis Vuitton Limelight</h5>
+
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-top">4 999 ₴</p>
+                  <a href="#" class="card-link-top card-link">Дніпро</a>
+                </div>
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-bottom">3 499 ₴</p>
+                  <a href="#" class="card-link-bottom card-link">Brandear</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="card5">
+              <a href="#" class="card-link">
+                <div class="card__img-box">
+                  <img
+                    class="card-img-top"
+                    src="images/cards/5.png"
+                    alt="1.png"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">ELENA GHISELINI</h6>
+                <h5 class="card-title">Сумка з декором Elena Ghisellini</h5>
+
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-top">1 999 ₴</p>
+                  <a href="#" class="card-link-top card-link">Дніпро</a>
+                </div>
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-bottom">1 599 ₴</p>
+                  <a href="#" class="card-link-bottom card-link">Brandear</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="card6">
+              <a href="#" class="card-link">
+                <div class="card__img-box">
+                  <img
+                    class="card-img-top"
+                    src="images/cards/6.png"
+                    alt="1.png"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">ACNE</h6>
+                <h5 class="card-title">Бомбер Acne на блискавці</h5>
+
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-top">5 999 ₴</p>
+                  <a href="#" class="card-link-top card-link">Київ</a>
+                </div>
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-bottom">4 199 ₴</p>
+                  <a href="#" class="card-link-bottom card-link">Alexalex</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="card7">
+              <a href="#" class="card-link">
+                <div class="card__img-box">
+                  <img
+                    class="card-img-top"
+                    src="images/cards/7.png"
+                    alt="1.png"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">GUCCI</h6>
+                <h5 class="card-title">Довга сукня Gucci</h5>
+
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-top">11 999 ₴</p>
+                  <a href="#" class="card-link-top card-link">Рівне</a>
+                </div>
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-bottom">8 599 ₴</p>
+                  <a href="#" class="card-link-bottom card-link">SellBuy</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="card8">
+              <a href="#" class="card-link">
+                <div class="card__img-box">
+                  <img
+                    class="card-img-top"
+                    src="images/cards/8.png"
+                    alt="1.png"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">CHANEL</h6>
+                <h5 class="card-title">Помаранчевий бомбер Woolrich</h5>
+
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-top">1 999 ₴</p>
+                  <a href="#" class="card-link-top card-link">Кропивницький</a>
+                </div>
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-bottom">1 599 ₴</p>
+                  <a href="#" class="card-link-bottom card-link">Deeva_Sofia</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="card9">
+              <a href="#" class="card-link">
+                <div class="card__img-box">
+                  <img
+                    class="card-img-top"
+                    src="images/cards/9.png"
+                    alt="1.png"
+                  />
+                </div>
+              </a>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">HACHE</h6>
+                <h5 class="card-title">Салатове пальто Hache</h5>
+
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-top">5 999 ₴</p>
+                  <a href="#" class="card-link-top card-link">Київ</a>
+                </div>
+                <div class="card__price-box d-flex justify-content-between">
+                  <p class="card__price-bottom">4 199 ₴</p>
+                  <a href="#" class="card-link-bottom card-link">LoveBrand</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="page__box">
+            <nav class="pagination__nav" aria-label="Search results pages">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a
+                    class="page-link page__link-start"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Попередня</a
+                  >
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                <li class="page-item">
+                  <a class="page-link page__link-a" href="#">Наступна</a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer row">
+      <section class="list__group-box col-auto container">
+        <div class="list__group-items">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Довідка для покупців</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Отримати підтримку</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Як купувати</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Як залишити корисний відгук</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Програма Захисту Покупців</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#"
+                >Рекомендації з безпечних покупок</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="list__group-items">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Довідка для продавців</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Як почати продавати</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Тарифи</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Угода користувача</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Політика конфіденційності</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#"
+                >Правила користування порталом</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Бонусна програма</a>
+            </li>
+          </ul>
+        </div>
+        <div class="list__group-items">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Про нас</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Довідка та FAQ</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Захист легальності контенту</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Адміністрація</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Вакансії</a>
+            </li>
+          </ul>
+        </div>
+        <div class="list__group-items">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">Мобільний додаток</a>
+            </li>
+            <li class="list-group-item">
+              <a class="dropdown-item" href="#">
+                <img
+                  class="img__google"
+                  src="images/google-play.svg"
+                  alt="google-play"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <span class="footer__bottom container"
+        ><a class="dropdown-item" href="#">© 2022 Monvalise</a></span
+      >
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
