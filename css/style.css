@@ -635,7 +635,7 @@ a {
   border-top: 1px solid #e0e3e3;
 }
 
-@media (max-width: 1319px) {
+@media (max-width: 1330px) {
   .cards__box {
     display: flex;
     flex-wrap: wrap;
